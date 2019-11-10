@@ -1,0 +1,191 @@
+.ai-c {
+  align-items: center;
+}
+.bgc-ltorange-hv:hover {
+  background-color: rgb(255, 176, 86);
+}
+
+.bgc-shadow-hv:hover {
+  -moz-box-shadow: 0 0 20px rgb(255, 255, 255);
+  -webkit-box-shadow: 0 0 20px rgb(255, 255, 255);
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+.bgc-trnsorange {
+  background-color: rgb(255, 115, 0, 0.6);
+}
+.bgc-white {
+  background-color: white;
+}
+
+.bd-n {
+  border: none;
+}
+.bds-o {
+  border-style: outset;
+}
+.bdrs-50 {
+  border-radius: 50%;
+}
+.bdrs-5 {
+  border-radius: 5%;
+}
+.bdrs-5px {
+  border-radius: 5px;
+}
+.bdm-10 {
+  bottom: 10px;
+}
+.bgc-gainsboro {
+  background-color: gainsboro;
+}
+.bgc-lav {
+  background-color: lavender;
+}
+.bgc-orange {
+  background-color: rgb(255, 136, 0);
+}
+.bgc-pink {
+  background: #e87;
+}
+.bgc-turq {
+  background: #41b3a3;
+}
+.bgc-white {
+  background: white;
+}
+.bxsh-0-5-15-0 {
+  box-shadow: 0px 5px 15px 0px;
+}
+.c-white {
+  color: #dfdce3;
+}
+.cur-p {
+  cursor: pointer;
+}
+
+.d-f {
+  display: flex;
+}
+.d-ib {
+  display: inline-block;
+}
+.fa-save {
+  color: dodgerblue;
+}
+.fa-save:active {
+  color: rgb(117, 116, 116);
+}
+
+.ff-turrent {
+  font-family: "Turret Road", cursive;
+}
+
+.ff-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ff-nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+.ff-robotoMono {
+  font-family: "Roboto Mono", monospace;
+}
+
+.ff-slabo {
+  font-family: "Slabo 27px", serif;
+}
+.fl-start {
+  float: left;
+}
+.fld-c {
+  flex-direction: column;
+}
+
+.flgw-1 {
+  flex-grow: 1;
+}
+.fz-24 {
+  font-size: 24px;
+}
+.fz-300 {
+  font-size: 300%;
+}
+.h-a {
+  height: auto;
+}
+.h-15 {
+  height: 15em;
+}
+.h-25vw {
+  height: 25vw;
+}
+.h-100vh {
+  height: 100vh;
+}
+.jc-c {
+  justify-content: center;
+}
+.jc-sa {
+  justify-content: space-around;
+}
+.m-a {
+  margin: auto;
+}
+.maw-maxc {
+  max-width: max-content;
+}
+.maw-80 {
+  max-width: 80%;
+}
+.m-1 {
+  margin: 1rem;
+}
+.m-5px {
+  margin: 5px;
+}
+.m-10px {
+  margin: 10px;
+}
+.m-20px {
+  margin: 20px;
+}
+.ov-h {
+  overflow: hidden;
+}
+.p-\.5 {
+  padding: 0.5rem;
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-1x1 {
+  padding: 1rem 1rem;
+}
+.pos-a {
+  position: absolute;
+}
+.pos-r {
+  position: relative;
+}
+.ta-c {
+  text-align: center;
+}
+.td-n {
+  text-decoration: none;
+}
+.w-25vw {
+  width: 25vw;
+}
+.w-50 {
+  width: 50%;
+}
+.w-900 {
+  width: 900px;
+}
+.w-100 {
+  width: 100%;
+}
