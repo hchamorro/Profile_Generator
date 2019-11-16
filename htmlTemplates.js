@@ -254,5 +254,5 @@ module.exports = {
 // const test = new CreateHtml("red");
 
 // let show = test.templateHtml();
-
+// to use outside after require html.staticHtml
 //console.log(CreateHtml);
