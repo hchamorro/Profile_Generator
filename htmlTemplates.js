@@ -210,30 +210,30 @@ const CreateHtml = function(color) {
           <body class="bgc-light-${this.color} ff-quicksand m-a maw-80">
             <div class="bgc-dark-${this.color} bdrs-5 d-f fld-c m-a maw-50  p-2">
               <div class="d-f jc-c">
-                <img class="bdrs-50 h-50vw" src="${ans}" />
+                <img class="bdrs-50 h-50vw" src="${ans.data.avatar_url}" />
               </div>
-              <h1 class="d-f jc-c">${ans}</h1>
-              <p class="d-f jc-c"> ${ans} ${ans}</p>
+              <h1 class="d-f jc-c">${ans.data.name}</h1>
+              <p class="d-f jc-c"> ${ans.data.location} ${ans.data.company}</p>
             </div>
-            <div class="d-f jc-c p-2">${ans}</div>
+            <div class="d-f jc-c p-2">${ans.data.bio}</div>
             <div class="d-f jc-se m-1">
               <div class="bgc-dark-${this.color} bdrs-5 ta-c w-25">
                 <h3>Public Repositories</h3>
-                <p class="d-f jc-c"> ${ans}</p>
+                <p class="d-f jc-c"> ${ans.data.public_repos}</p>
               </div>
               <div class="bgc-dark-${this.color} bdrs-5 ta-c w-25">
                 <h3>Followers</h3>
-                <p class="d-f jc-c">${ans}</p>
+                <p class="d-f jc-c">${ans.data.followers}</p>
               </div>
             </div>
             <div class="d-f jc-se m-1">
               <div class="bgc-dark-${this.color} bdrs-5 ta-c w-25">
                 <h3>GitHub Stars</h3>
-                <p class="d-f jc-c">3</p>
+                <p class="d-f jc-c">127</p>
               </div>
               <div class="bgc-dark-${this.color} bdrs-5 ta-c w-25">
                 <h3>Following</h3>
-                <p class="d-f jc-c">${ans}</p>
+                <p class="d-f jc-c">${ans.data.following}</p>
               </div>
             </div>
           </body>
@@ -248,7 +248,7 @@ module.exports = {
   ansHtml: ansHtml,
   themeHtml: themeHtml,
   ColoredHtml: ColoredHtml,
-  CreateHtml: CreateHtml
+  CreateHtml
 };
 
 // const test = new CreateHtml("red");
