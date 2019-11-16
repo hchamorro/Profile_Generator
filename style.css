@@ -1,3 +1,9 @@
+:root {
+  --theme-color-main: #448d76;
+  --theme-color-light: #e7f7d4;
+  --theme-color-dark: #2b5a4b;
+}
+
 .ai-c {
   align-items: center;
 }
@@ -17,17 +23,24 @@
   background-color: white;
 }
 
+.bgc-D4EDF7 {
+  background-color: #d4edf7;
+}
+.bgc-6f9fd8 {
+  background-color: #6f9fd8;
+}
+
 .bd-n {
   border: none;
 }
 .bds-o {
   border-style: outset;
 }
-.bdrs-50 {
-  border-radius: 50%;
-}
 .bdrs-5 {
   border-radius: 5%;
+}
+.bdrs-50 {
+  border-radius: 50%;
 }
 .bdrs-5px {
   border-radius: 5px;
@@ -35,11 +48,36 @@
 .bdm-10 {
   bottom: 10px;
 }
-.bgc-gainsboro {
-  background-color: gainsboro;
+
+.bgc-dark-blue {
+  background-color: #6f9fd8;
+}
+.bgc-dark-green {
+  background-color: #2b5a4b;
+}
+.bgc-dark-purple {
+  background-color: #700cbc;
+}
+.bgc-dark-red {
+  background-color: #d71421;
 }
 .bgc-lav {
   background-color: lavender;
+}
+.bgc-light-blue {
+  background-color: #d4edf7;
+}
+.bgc-light-green {
+  background-color: #e7f7d4;
+}
+.bgc-light-purple {
+  background-color: #e1d4f7;
+}
+.bgc-light-red {
+  background-color: #f7d4d6;
+}
+.bgc-gainsboro {
+  background-color: gainsboro;
 }
 .bgc-orange {
   background-color: rgb(255, 136, 0);
@@ -52,6 +90,15 @@
 }
 .bgc-white {
   background: white;
+}
+.bgc-var-drk {
+  background-color: var(--theme-color-dark);
+}
+.bgc-var-lgt {
+  background-color: var(--theme-color-light);
+}
+.bgc-var-main {
+  background-color: var(--theme-color-main);
 }
 .bxsh-0-5-15-0 {
   box-shadow: 0px 5px 15px 0px;
@@ -88,6 +135,10 @@
   font-family: "Nunito", sans-serif;
 }
 
+.ff-quicksand {
+  font-family: "Quicksand", sans-serif;
+}
+
 .ff-robotoMono {
   font-family: "Roboto Mono", monospace;
 }
@@ -120,6 +171,9 @@
 .h-25vw {
   height: 25vw;
 }
+.h-50vw {
+  height: 50vh;
+}
 .h-100vh {
   height: 100vh;
 }
@@ -129,11 +183,17 @@
 .jc-sa {
   justify-content: space-around;
 }
+.jc-se {
+  justify-content: space-evenly;
+}
 .m-a {
   margin: auto;
 }
 .maw-maxc {
   max-width: max-content;
+}
+.maw-50 {
+  max-width: 50%;
 }
 .maw-80 {
   max-width: 80%;
@@ -179,6 +239,9 @@
 }
 .w-25vw {
   width: 25vw;
+}
+.w-25 {
+  width: 25%;
 }
 .w-50 {
   width: 50%;

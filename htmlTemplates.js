@@ -5,14 +5,13 @@ const staticHtml = function() {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <title>Mini Git</title>
       </head>
       <body>
         <div>
-          <img src="./img.jpg" width="50" />
+          <div>
+             <img src="./img.jpg" width="50" />
+          </div>     
           <h1>NAME</h1>
           <p>add info</p>
         </div>
@@ -43,38 +42,39 @@ const staticHtml = function() {
 
 const ansHtml = function(ans) {
   let answerHtml = `<!DOCTYPE html>
-      <html lang="en">
+      <html class="bgc-white" lang="en">
         <head>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <title>Mini Git</title>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+        <title>Mini Git Profile</title>
         </head>
-        <body>
-          <div>
-            <div>
-              <img src="${ans.data.avatar_url}" width="50" />
+        <body class="bgc-D4EDF7 ff-quicksand m-a maw-80">
+          <div class="bgc-6f9fd8 bdrs-5 d-f fld-c m-a maw-50  p-2">
+            <div class="d-f jc-c">
+              <img class="bdrs-50 h-50vw" src="${ans.data.avatar_url}" />
             </div>
-            <h1>${ans.data.name}</h1>
-            <p> ${ans.data.location} ${ans.data.company}</p>
+            <h1 class="d-f jc-c">${ans.data.name}</h1>
+            <p class="d-f jc-c"> ${ans.data.location} ${ans.data.company}</p>
           </div>
-          <div>about</div>
-          <div>
-            <div>
+          <div class="d-f jc-c p-2">${ans.data.bio}</div>
+          <div class="d-f jc-se m-1">
+            <div class="bgc-6f9fd8 bdrs-5 ta-c w-25">
               <h3>Public Repositories</h3>
-              <p> ${ans.data.public_repos}</p>
+              <p class="d-f jc-c"> ${ans.data.public_repos}</p>
             </div>
-            <div>
+            <div class="bgc-6f9fd8 bdrs-5 ta-c w-25">
               <h3>Followers</h3>
-              <p>${ans.data.followers}</p>
+              <p class="d-f jc-c">${ans.data.followers}</p>
             </div>
-            <div>
+          </div>
+          <div class="d-f jc-se m-1">  
+            <div class="bgc-6f9fd8 bdrs-5 ta-c w-25">
               <h3>GitHub Stars</h3>
-              <p>3</p>
+              <p class="d-f jc-c">3</p>
             </div>
-            <div>
+            <div class="bgc-6f9fd8 bdrs-5 ta-c w-25">
               <h3>Following</h3>
-              <p>${ans.data.following}</p>
+              <p class="d-f jc-c">${ans.data.following}</p>
             </div>
           </div>
         </body>
@@ -83,7 +83,176 @@ const ansHtml = function(ans) {
   return answerHtml;
 };
 
+const themeHtml = function(ans) {
+  let themeHtml = `<!DOCTYPE html>
+        <html class="bgc-white" lang="en">
+          <head>
+          <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="style.css" />
+          <title>Mini Git Profile</title>
+          </head>
+          <body class="bgc-var-lgt ff-quicksand m-a maw-80">
+            <div class="bgc-var-main bdrs-5 d-f fld-c m-a maw-50  p-2">
+              <div class="d-f jc-c">
+                <img class="bdrs-50 h-50vw" src="${ans.data.avatar_url}" />
+              </div>
+              <h1 class="d-f jc-c">${ans.data.name}</h1>
+              <p class="d-f jc-c"> ${ans.data.location} ${ans.data.company}</p>
+            </div>
+            <div class="d-f jc-c p-2">${ans.data.bio}</div>
+            <div class="d-f jc-se m-1">
+              <div class="bgc-var-main bdrs-5 ta-c w-25">
+                <h3>Public Repositories</h3>
+                <p class="d-f jc-c"> ${ans.data.public_repos}</p>
+              </div>
+              <div class="bgc-var-main bdrs-5 ta-c w-25">
+                <h3>Followers</h3>
+                <p class="d-f jc-c">${ans.data.followers}</p>
+              </div>
+            </div>
+            <div class="d-f jc-se m-1">  
+              <div class="bgc-var-main bdrs-5 ta-c w-25">
+                <h3>GitHub Stars</h3>
+                <p class="d-f jc-c">3</p>
+              </div>
+              <div class="bgc-var-main bdrs-5 ta-c w-25">
+                <h3>Following</h3>
+                <p class="d-f jc-c">${ans.data.following}</p>
+              </div>
+            </div>
+          </body>
+        </html>
+        `;
+  return themeHtml;
+};
+
+const ColoredHtml = function(color, ans) {
+  this.color = color;
+  this.changeColor = function(value) {
+    if (value === "blue") {
+      this.color = {
+        light: "bgc-D4EDF7",
+        dark: "bgc-6f9fd8"
+      };
+      return color;
+    }
+    if (value === "green") {
+      this.color = {
+        light: "#e7f7d4",
+        dark: "darkgreen"
+      };
+      return color;
+    }
+  };
+
+  this.templateOoc = function(ans) {
+    let temp = `<!DOCTYPE html>
+        <html class="bgc-white" lang="en">
+          <head>
+          <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="style.css" />
+          <title>Mini Git Profile</title>
+          </head>
+          <body class="${this.color.light} ff-quicksand m-a maw-80">
+            <div class="${this.color.dark} bdrs-5 d-f fld-c m-a maw-50  p-2">
+              <div class="d-f jc-c">
+                <img class="bdrs-50 h-50vw" src="${ans}" />
+              </div>
+              <h1 class="d-f jc-c">${ans}</h1>
+              <p class="d-f jc-c"> ${ans} ${ans}</p>
+            </div>
+            <div class="d-f jc-c p-2">${ans}</div>
+            <div class="d-f jc-se m-1">
+              <div class="${this.color.dark} bdrs-5 ta-c w-25">
+                <h3>Public Repositories</h3>
+                <p class="d-f jc-c"> ${ans}</p>
+              </div>
+              <div class="${this.color.dark} bdrs-5 ta-c w-25">
+                <h3>Followers</h3>
+                <p class="d-f jc-c">${ans}</p>
+              </div>
+            </div>
+            <div class="d-f jc-se m-1">
+              <div class="${this.color.dark} bdrs-5 ta-c w-25">
+                <h3>GitHub Stars</h3>
+                <p class="d-f jc-c">3</p>
+              </div>
+              <div class="${this.color.dark} bdrs-5 ta-c w-25">
+                <h3>Following</h3>
+                <p class="d-f jc-c">${ans}</p>
+              </div>
+            </div>
+          </body>
+        </html>
+        `;
+    return temp;
+  };
+};
+
+// const test = new ColoredHtml();
+
+// test.changeColor("green");
+
+// let car = test.templateHtml();
+// console.log(car);
+
+const CreateHtml = function(color) {
+  this.color = color;
+
+  this.templateHtml = function(ans) {
+    let tempHtml = `<!DOCTYPE html>
+        <html class="bgc-white" lang="en">
+          <head>
+          <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="style.css" />
+          <title>Mini Git Profile</title>
+          </head>
+          <body class="bgc-light-${this.color} ff-quicksand m-a maw-80">
+            <div class="bgc-dark-${this.color} bdrs-5 d-f fld-c m-a maw-50  p-2">
+              <div class="d-f jc-c">
+                <img class="bdrs-50 h-50vw" src="${ans}" />
+              </div>
+              <h1 class="d-f jc-c">${ans}</h1>
+              <p class="d-f jc-c"> ${ans} ${ans}</p>
+            </div>
+            <div class="d-f jc-c p-2">${ans}</div>
+            <div class="d-f jc-se m-1">
+              <div class="bgc-dark-${this.color} bdrs-5 ta-c w-25">
+                <h3>Public Repositories</h3>
+                <p class="d-f jc-c"> ${ans}</p>
+              </div>
+              <div class="bgc-dark-${this.color} bdrs-5 ta-c w-25">
+                <h3>Followers</h3>
+                <p class="d-f jc-c">${ans}</p>
+              </div>
+            </div>
+            <div class="d-f jc-se m-1">
+              <div class="bgc-dark-${this.color} bdrs-5 ta-c w-25">
+                <h3>GitHub Stars</h3>
+                <p class="d-f jc-c">3</p>
+              </div>
+              <div class="bgc-dark-${this.color} bdrs-5 ta-c w-25">
+                <h3>Following</h3>
+                <p class="d-f jc-c">${ans}</p>
+              </div>
+            </div>
+          </body>
+        </html>
+        `;
+    return tempHtml;
+  };
+};
+
 module.exports = {
   staticHtml: staticHtml,
-  ansHtml: ansHtml
+  ansHtml: ansHtml,
+  themeHtml: themeHtml,
+  ColoredHtml: ColoredHtml,
+  CreateHtml: CreateHtml
 };
+
+// const test = new CreateHtml("red");
+
+// let show = test.templateHtml();
+
+//console.log(CreateHtml);
